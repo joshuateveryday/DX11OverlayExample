@@ -363,7 +363,6 @@ technique11 SpriteTech {
             }
 
             _deviceContext.UnmapSubresource(_VB, 0);
-
             _deviceContext.DrawIndexed(spriteCount * 6, 0, 0);
         }
 

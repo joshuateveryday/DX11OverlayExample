@@ -72,6 +72,13 @@ namespace Overlay {
                 Thread.Sleep(1000);
             }
 
+            _hook = null;
+            _proxy = null;
+            _interface = null; 
+            _serverChannel = null;
+            _runWait = null;
+            _checkConnectionTask = null;
+            Log.Write("Unloading DLL");
         }
 
 

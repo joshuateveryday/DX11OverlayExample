@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
@@ -125,6 +126,7 @@ namespace Overlay.Hooking {
         int ResizeTarget(IntPtr swapChainPtr, ref ModeDescription dwTargetParams) {
             SwapChain swapChain = (SwapChain)swapChainPtr;
             {
+                
                 if (_overlay != null) {
                     _overlay.Dispose();
                     _overlay = null;

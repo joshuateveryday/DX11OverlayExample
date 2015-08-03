@@ -103,7 +103,7 @@ namespace Overlay.Engine {
 
             BeginScene();
 
-            var baseFont = new System.Drawing.Font("Arial", 14.0f);
+            var baseFont = new System.Drawing.Font("Arial", 18.0f, System.Drawing.FontStyle.Bold);
             var font = GetFont(baseFont);
             var color = System.Drawing.Color.LimeGreen;
 
